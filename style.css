@@ -1,0 +1,117 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', monospace;
+    background-color: #121212;
+    color: #39ff14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    width: 100%;
+    border-bottom: 2px solid #39ff14;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 0.8rem;
+    color: #ff00ff;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .cell {
+    background-color: #1a1a1a;
+    border: 2px solid #39ff14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #39ff14;
+    transition: background-color 0.2s;
+  }
+  
+  .cell:hover {
+    background-color: #222;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #restart-btn {
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .scoreboard {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  
+  .instructions {
+    margin-top: 2rem;
+    font-size: 0.6rem;
+    color: #ccc;
+    text-align: center;
+  }
+  
+  footer {
+    font-size: 0.5rem;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    width: 100%;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 400px) {
+    #game-board {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+    }
+  
+    .cell {
+      font-size: 1.5rem;
+    }
+  }
+  

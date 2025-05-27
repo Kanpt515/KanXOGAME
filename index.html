@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kan515 – XO Retro Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Kan515</h1>
+    <p class="tagline">Retro XO Game</p>
+  </header>
+
+  <main>
+    <section class="game-container">
+      <div id="game-board">
+        <!-- 3x3 Grid cells dynamically generated or hard-coded -->
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <div class="controls">
+        <button id="restart-btn">Restart</button>
+        <div class="scoreboard">
+          <p>Player: <span id="player-score">0</span></p>
+          <p>Computer: <span id="ai-score">0</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructions">
+      <h2>How to Play</h2>
+      <p>Click on an empty square to make your move. Try to beat the computer! Retro fun included.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kan515. Made with ♥ and 8-bit vibes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
